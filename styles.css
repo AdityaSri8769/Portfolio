@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+}
+p{
+    margin-top: 10px;
+}
+#image-carousel {
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#image-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#image-carousel:hover {
+    transform: scale(1.1);
+}
+
+body {
+    background: #f3f3f3;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #0078d7;
+    margin-bottom: 20px;
+}
+
+#dark-mode-toggle {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #0056a3;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1;
+}
+
+#about, #skills {
+    max-width: 45%;
+}
+body.dark {
+    background-color: #333;
+    color: white;
+}
+
+body.dark header h1 {
+    color: white;
+}
+
+body.dark section {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+canvas {
+    margin-top: 20px;
+}
+footer {
+    background-color: #0078d7;
+    color: white;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.1rem; 
+    text-decoration: none;
+}
+
+footer .social-links i {
+    transition: color 0.3s ease
+    ;
+}
+
+footer .social-links a:hover {
+    color: #0078d7; 
+}
